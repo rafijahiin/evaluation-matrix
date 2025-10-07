@@ -1,513 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>UNFPA Bangladesh CPE Matrix (2022–2026) – All EQs</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { font-family: Arial, sans-serif; background: #f5f6f8; color: #24262b; margin: 0; padding: 0;}
-    .container { max-width: 1250px; margin: 36px auto; padding: 24px; background: #fff; border-radius: 14px; box-shadow: 0 4px 32px rgba(47,54,64,0.10);}
-    h1 { color: #8B3250; margin-bottom: 10px; }
-    h2 { color: #2F3640; font-size: 1.18rem; margin-top:40px; margin-bottom: 12px; border-bottom: 2px solid #8B3250;}
-    .question { background: #FAF8F8; border-left: 5px solid #8B3250; padding: 14px 18px; margin-bottom: 18px; font-weight: bold; }
-    table { width: 100%; border-collapse: collapse; margin-bottom: 24px; font-size: 15px;}
-    th, td { border: 1px solid #e0e3e7; padding: 13px 12px; text-align: left; vertical-align: top; }
-    th { background: #2F3640; color: #fff; font-weight: 700;}
-    tr:nth-child(even) { background: #f7f7fb; }
-    ul { margin: 0 0 0 18px; padding-left: 0;}
-    @media (max-width: 900px) {
-      .container { padding: 5vw 2vw; }
-      table, thead, tbody, th, td, tr { display: block; }
-      th { position: absolute; left: -9999px; top: -9999px; }
-      td { border: none; border-bottom: 1px solid #ddd; position: relative; padding-left: 40%; min-height: 50px;}
-      td:before {
-        position: absolute; top: 12px; left: 12px; width: 35%; white-space: pre-wrap;
-        font-weight: bold; color: #8B3250; font-size: 1em;
-        content: attr(data-label);
-      }
-      tr { margin-bottom: 18px; }
-    }
-    .legend { font-size:13px;color:#888;line-height:1.4; margin-bottom: 48px;}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPE Relational View: Findings, Conclusions, Recommendations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* gray-50 */
+        }
+        .card {
+            border-left-width: 4px;
+            transition: all 0.2s ease-in-out;
+            margin-bottom: 1.5rem; 
+        }
+        .card:last-child {
+            margin-bottom: 0;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        .card-rec { border-color: #1d4ed8; background-color: #eff6ff;} /* Blue-700 border, Blue-50 bg */
+        .card-con { border-color: #ea580c; background-color: #fff7ed;} /* Orange-600 border, Orange-50 bg */
+        .card-fin { border-color: #dc2626; background-color: #fef2f2;} /* Red-600 border, Red-50 bg */
+
+        .connector-path {
+            stroke: #9ca3af; /* gray-400 */
+            stroke-width: 2;
+            fill: none;
+        }
+        .recommendation-group {
+            position: relative;
+            padding: 3rem 0;
+            border-bottom: 2px dashed #d1d5db; /* gray-300 */
+        }
+         .recommendation-group:last-child {
+            border-bottom: none;
+        }
+    </style>
 </head>
-<body>
-<div class="container">
-  <h1>UNFPA Bangladesh – Country Programme Evaluation Matrix (2022–2026)</h1>
-  <div class="legend">
-    <b>Legend:</b> LNOB = Leave No One Behind; PWD = Persons with Disabilities; A&amp;Y = Adolescents &amp; Youth; FSW = Female Sex Workers; IP = Implementing Partner; DRR = Disaster Risk Reduction; AR = Annual Report; KII = Key Informant Interview; FGD = Focus Group Discussion.
-  </div>
+<body class="text-gray-800">
 
-  <!-- EQ1 -->
-  <h2>EQ1: Relevance</h2>
-  <div class="question">
-    To what extent has the Country Programme been adapted to the needs of vulnerable and marginalized groups (e.g., adolescents, young people, women and girls with disabilities, transgender individuals, ethnic communities) in both development and humanitarian contexts, while aligning to changing national priorities, strategies, the SDGs, the ICPD Programme of Action, and UNFPA transformative goals and strategic shifts?
-  </div>
-  <table>
-    <thead>
-      <tr>
-        <th>Judgment Criteria (Assumption)</th>
-        <th>Indicator(s)</th>
-        <th>Source(s) of Verification</th>
-        <th>Data Collection Tools / Methods</th>
-        <th>Evidence / Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <b>1.1:</b> The CP responded to the needs of different vulnerable and marginalized groups in development and humanitarian contexts, contributing to their exercise of rights and narrowing inequality gaps.
-        </td>
-        <td>
-          <ul>
-            <li>I.1. Mechanisms/processes to include marginalized groups (LNOB, PWD, A&Y, etc.)</li>
-            <li>I.2. Targeted interventions for specific groups</li>
-            <li>I.3. Staff/IP capacity-building</li>
-            <li>I.4. Gov. policy adapts for marginalized groups</li>
-            <li>I.5. Humanitarian response adapted</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Annual Reports 2022–2024</li>
-            <li>4.2.2_CPIP</li>
-            <li>GBV SOPs</li>
-            <li>VAW Survey</li>
-            <li>KII/FGD: IPs, youth, disability orgs</li>
-            <li>Fistula Annual Report</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Desk review</li>
-            <li>KII</li>
-            <li>FGD</li>
-            <li>Site visits</li>
-            <li>Case studies</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>CP10 integrates DRR/climate</li>
-            <li>SOP for GBV services, Health Economics Unit</li>
-            <li>WFS disability inclusion weak</li>
-            <li>Dignity/MHM kits, Santal/indigenous outreach, A&Y, trans inclusion partial</li>
-            <li>Data gaps, uneven implementation</li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <b>1.2:</b> UNFPA responded to changing priorities (8FYP, SP, SDGs, etc.)
-        </td>
-        <td>
-          <ul>
-            <li>I.1. Programme alignment</li>
-            <li>I.2. Participation in coordination spaces</li>
-            <li>I.3. Multi-sector adaptation</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>CPD 2022–2026</li>
-            <li>8th Five-Year Plan</li>
-            <li>Govt docs</li>
-            <li>Annual Reports</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Desk review</li>
-            <li>KII: Govt/UN/partners</li>
-            <li>Triangulation</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>CPD, workplans aligned to 8FYP, UNSDCF, SP, SDGs</li>
-            <li>Policy support, GBV SOPs, SBCC</li>
-            <li>Delays in IP approval</li>
-            <li>Disconnect for some humanitarian crises (e.g., Rohingya)</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <div class="container mx-auto px-4 lg:px-8 py-12 max-w-7xl">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-blue-800">Country Programme Evaluation</h1>
+            <p class="text-xl text-gray-600 mt-2">A Relational View of Findings, Conclusions & Recommendations</p>
+        </header>
 
-  <!-- EQ2 -->
-  <h2>EQ2: Relevance – Thematic ToC Alignment</h2>
-  <div class="question">
-    In the context of a dynamic national context, to which extent have the thematic ToCs ensured shared strategic direction and remained aligned to national priorities and relevant to the persisting inequalities and emerging megatrends (climate change, demographic shifts, ageing, migration)?
-  </div>
-  <table>
-    <thead>
-      <tr>
-        <th>Judgment Criteria</th>
-        <th>Indicator(s)</th>
-        <th>Source(s)</th>
-        <th>Data Collection Tools</th>
-        <th>Evidence / Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <b>2.1:</b> Thematic ToCs guide strategic/programmatic adaptation for LNOB and megatrends
-        </td>
-        <td>
-          <ul>
-            <li>I.1. Thematic ToCs used in strategy</li>
-            <li>I.2. Inter-area dialogue ensures direction</li>
-            <li>I.3. ToCs guide decisions, address LNOB/megatrends</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Annual Reports</li>
-            <li>Thematic PPTs</li>
-            <li>Govt plans</li>
-            <li>KIIs: UNFPA, GoB, UN</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Desk review</li>
-            <li>KII: UNFPA, APRO, Govt</li>
-            <li>Document analysis</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>CP10 used 4 thematic ToCs, reinforced intra-area focus</li>
-            <li>Alignment to 8FYP, ICPD, SDGs documented</li>
-            <li>Rapid program adaptation to policy/curriculum shifts</li>
-            <li>Emerging issues addressed variably; coverage stronger in SRH/GBV, weaker in ageing/migration</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+        <div id="content-container" class="relative z-10">
+             <!-- Groups will be injected here by script -->
+        </div>
 
-  <!-- EQ3 -->
-  <h2>EQ3: Coherence</h2>
-  <div class="question">
-    To what extent is the UNFPA Country Programme coherent and integrated across thematic areas, sectors and partnerships to maximize the effectiveness, ensure consistent implementation of GEWE, LNOB and disability inclusion, and reduce inefficiencies?
-  </div>
-  <table>
-    <thead>
-      <tr>
-        <th>Judgment Criteria</th>
-        <th>Indicator(s)</th>
-        <th>Source(s)</th>
-        <th>Data Collection Tools</th>
-        <th>Evidence / Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <b>3.1:</b> CP achieves internal and external coherence for GEWE, LNOB, disability
-        </td>
-        <td>
-          <ul>
-            <li>I.1. Degree of cross-thematic integration</li>
-            <li>I.2. Multi-sectoral partnerships</li>
-            <li>I.3. Consistency in GEWE/LNOB/disability approaches</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Annual Reports</li>
-            <li>MoUs, partnership docs</li>
-            <li>Meeting minutes</li>
-            <li>KII: Govt, UN, IPs</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Desk review</li>
-            <li>KII, FGD</li>
-            <li>Program mapping</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>UNFPA co-chairs UNSDCF groups, GBV/SRH clusters</li>
-            <li>Disability/LNOB mainstreamed in most but not all programs</li>
-            <li>Duplication/overlap mitigated through joint workplans, but gaps in disability/urban</li>
-            <li>Variable IP and govt ownership of cross-cutting issues</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+        <footer class="text-center mt-16 text-sm text-gray-500">
+            <p>This infographic illustrates how multiple findings build into a conclusion, and how conclusions support an overarching recommendation.</p>
+        </footer>
+    </div>
 
-  <!-- EQ4 -->
-  <h2>EQ4: Effectiveness and Coverage (Opportunities, Innovation, Partnerships)</h2>
-  <div class="question">
-    To what extent has UNFPA leveraged opportunities, implemented innovative approaches and tools, and strengthened strategic partnerships to address inequalities and accelerate transformative results in SRHR, GEWE, and A&Y?
-  </div>
-  <table>
-    <thead>
-      <tr>
-        <th>Judgment Criteria</th>
-        <th>Indicator(s)</th>
-        <th>Source(s)</th>
-        <th>Data Collection Tools</th>
-        <th>Evidence / Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <b>4.1:</b> CP leverages partnerships/innovation for transformative results
-        </td>
-        <td>
-          <ul>
-            <li>I.1. Innovations piloted and scaled</li>
-            <li>I.2. Strength/quality of partnerships (Govt, CSO, private sector)</li>
-            <li>I.3. Reach to LNOB/vulnerable groups</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Annual Reports</li>
-            <li>Project docs</li>
-            <li>KII: IPs, partners</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Desk review</li>
-            <li>KII, FGD</li>
-            <li>Innovation case studies</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Innovative pilots: Anticipatory Action, digital health tools, youth engagement</li>
-            <li>Multi-sector partnerships: MoHFW, MoWCA, NGOs, private sector</li>
-            <li>Gaps in scale-up, equity of access for all LNOB groups</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <script>
+        const data = {
+            recommendations: [
+                { id: 'rec1', name: "Develop an Integrated Strategic Framework", description: "Create a unified Theory of Change that integrates thematic areas, proactively addresses megatrends, and ensures a consistent systems-based approach across the country programme." },
+                { id: 'rec2', name: "Systematize Normative Influence and Financing", description: "Strengthen UNFPA's normative role by linking high-quality data to financing dialogues, accelerating the shift from funding to financing, and ensuring budget traction for key initiatives." },
+                { id: 'rec3', name: "Enhance Effectiveness through Equity-Focused Delivery", description: "Improve programme effectiveness by making equity and LNOB visibility a core component of service delivery, scaling up proven models, and ensuring fiscal stability for essential services like GBV support." },
+                { id: 'rec4', name: "Streamline Operations and Institutionalize Innovation", description: "Increase efficiency by addressing operational and execution bottlenecks, and create a formal, office-wide pathway for integrating and scaling innovations from pilot to routine practice." },
+                { id: 'rec5', name: "Strengthen Humanitarian-Development-Peace Nexus", description: "Bolster the HDP nexus by securing dedicated funding for resilience-building activities and advocating for policy adjustments that allow for more durable, long-term development linkages." }
+            ],
+            conclusions: [
+                { id: 'con1', name: "Conclusion 1", description: "Strategic alignment is strong, but integrated systems change is constrained by the absence of an umbrella ToC and lagging revisions of thematic ToCs." },
+                { id: 'con2', name: "Conclusion 2", description: "UNFPA’s normative and neutral convenor roles are central drivers of systems change, yet uptake and budget traction are uneven." },
+                { id: 'con3', name: "Conclusion 3", description: "Contributions to effectiveness are substantial but uneven; equity visibility is the Achilles’ heel." },
+                { id: 'con4', name: "Conclusion 4", description: "Efficiency-oriented adaptations protected delivery during shocks, but operational frictions slow execution." },
+                { id: 'con5', name: "Conclusion 5", description: "Sustainability and the transition from funding to financing are advancing but fragile." },
+                { id: 'con6', name: "Conclusion 6", description: "The HDP nexus is operational in Cox’s Bazar, but resilience remains underfunded and policy-constrained." },
+                { id: 'con7', name: "Conclusion 7", description: "Innovations are largely project-led and not integrated in the ToCs and DNA." },
+                { id: 'con9', name: "Conclusion 9", description: "Megatrends have shifted from context to primary drivers of results." },
+                { id: 'con15', name: "Conclusion 15", description: "LNOB implementation is widespread but not systematic; disability visibility must be fixed." },
+            ],
+            findings: [
+                { id: 'fin1', name: "Finding 1", description: "The 10th CP is largely adapted to vulnerable groups, but partners’ capacity to apply LNOB, gender, and disability lenses remains uneven." },
+                { id: 'fin2', name: "Finding 2", description: "The 10th CP is aligned with national/global frameworks, and UNFPA leveraged its role to facilitate policy dialogues." },
+                { id: 'fin3', name: "Finding 3", description: "Thematic ToCs guided alignment, but the absence of an umbrella ToC limits an integrated systems approach." },
+                { id: 'fin4', name: "Finding 4", description: "Coherence is progressing unevenly, with a lack of systematic documentation for cross-thematic milestones." },
+                { id: 'fin7', name: "Finding 7", description: "UNFPA's influential role drives an evidence-driven normative agenda, active in key fora and channeling data into policy." },
+                { id: 'fin9', name: "Finding 9", description: "Innovations are useful but remain mostly project-led and under-communicated rather than an office-wide function." },
+                { id: 'fin10', name: "Finding 10", description: "UNFPA made a substantial—though uneven—contribution to strengthening national and district systems for SRHR, GBV and A&Y." },
+                { id: 'fin11', name: "Finding 11", description: "Marginalized groups benefit from interventions, but data cannot yet demonstrate they benefited *most*." },
+                { id: 'fin13', name: "Finding 13", description: "Resources were sufficient for priority outputs, but adequacy and timeliness were uneven, creating stop-start delivery." },
+                { id: 'fin14', name: "Finding 14", description: "Programme–operations coordination was effective, enabling efficient resource use, though episodic frictions remained." },
+                { id: 'fin16', name: "Finding 16", description: "Adaptations to shocks were timely and efficiency-oriented, but residual system frictions caused occasional stop-start delivery." },
+                { id: 'fin17', name: "Finding 17", description: "Capacity development has embedded behaviors with potential for continuity and replication." },
+                { id: 'fin18', name: "Finding 18", description: "Normative frameworks shaped with UNFPA inputs are enabling sustainability through costed policies and new SOPs." },
+                { id: 'fin19', name: "Finding 19", description: "The shift from funding to financing is consolidating sustainability, with institutionalized budgets and diversified models." },
+                { id: 'fin20', name: "Finding 20", description: "Humanitarian programming has operationalized the HDP nexus, coupling life-saving services with resilience-building." }
+            ],
+            connections: [
+                { recommendation: 'rec1', conclusions: ['con1', 'con9'], findings: { 'con1': ['fin3', 'fin4'], 'con9': ['fin3'] } },
+                { recommendation: 'rec2', conclusions: ['con2', 'con5'], findings: { 'con2': ['fin1', 'fin2', 'fin7'], 'con5': ['fin17', 'fin18', 'fin19'] } },
+                { recommendation: 'rec3', conclusions: ['con3', 'con15'], findings: { 'con3': ['fin10', 'fin11'], 'con15': ['fin1', 'fin11'] } },
+                { recommendation: 'rec4', conclusions: ['con4', 'con7'], findings: { 'con4': ['fin13', 'fin14', 'fin16'], 'con7': ['fin9'] } },
+                { recommendation: 'rec5', conclusions: ['con6'], findings: { 'con6': ['fin20'] } }
+            ]
+        };
 
-  <!-- EQ5 -->
-  <h2>EQ5: Effectiveness and Coverage (Results/Outcomes)</h2>
-  <div class="question">
-    To what extent has the Country Programme delivered its intended results, including access, quality, and equity of services for vulnerable and marginalized groups, in both development and humanitarian settings?
-  </div>
-  <table>
-    <thead>
-      <tr>
-        <th>Judgment Criteria</th>
-        <th>Indicator(s)</th>
-        <th>Source(s)</th>
-        <th>Data Collection Tools</th>
-        <th>Evidence / Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <b>5.1:</b> Intended results delivered with equity and coverage for vulnerable groups
-        </td>
-        <td>
-          <ul>
-            <li>I.1. Outcome/output indicator achievement (by LNOB group)</li>
-            <li>I.2. Coverage in development vs humanitarian settings</li>
-            <li>I.3. Service quality</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>M&E Dashboards</li>
-            <li>Annual Reports</li>
-            <li>DHIS2 data</li>
-            <li>Beneficiary feedback/FGD</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Data analysis</li>
-            <li>KII, FGD</li>
-            <li>Facility assessment</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Key results achieved in SRHR, GBV, A&Y, but gaps in disability, urban/rural equity</li>
-            <li>Humanitarian settings: MISP coverage high; data gaps on disability/trans</li>
-            <li>Service quality variable; supply/logistics/HR issues persist</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+        function createCard(item, type) {
+            const card = document.createElement('div');
+            card.id = `card-${item.id}`;
+            card.className = `card card-${type} rounded-lg shadow-md p-4`;
+            card.innerHTML = `
+                <h3 class="font-bold text-md">${item.name}</h3>
+                <p class="text-sm mt-1 text-gray-700">${item.description}</p>
+            `;
+            return card;
+        }
 
-  <!-- EQ6 -->
-  <h2>EQ6: Efficiency</h2>
-  <div class="question">
-    To what extent did UNFPA make the best possible use of its human, technical, logistical, administrative, and financial resources to achieve intended results?
-  </div>
-  <table>
-    <thead>
-      <tr>
-        <th>Judgment Criteria</th>
-        <th>Indicator(s)</th>
-        <th>Source(s)</th>
-        <th>Data Collection Tools</th>
-        <th>Evidence / Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <b>6.1:</b> CP resources optimized for efficiency and value for money
-        </td>
-        <td>
-          <ul>
-            <li>I.1. Timeliness of implementation</li>
-            <li>I.2. Resource allocation vs outputs</li>
-            <li>I.3. Bottlenecks and corrective action</li>
-            <li>I.4. Harmonization with partners to avoid duplication</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Financial reports</li>
-            <li>Annual Reports</li>
-            <li>Workplans</li>
-            <li>KII: Finance/Admin, IPs</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Desk review</li>
-            <li>KII, FGD</li>
-            <li>Financial analysis</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Delays due to IP workplan approval, procurement</li>
-            <li>Efficiencies from joint implementation with UN partners</li>
-            <li>Some duplication avoided, but bottlenecks in supply chain/HR remain</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+        function renderContent() {
+            const container = document.getElementById('content-container');
+            
+            data.connections.forEach((group, index) => {
+                const groupEl = document.createElement('div');
+                groupEl.className = 'recommendation-group';
+                groupEl.id = `group-${index}`;
 
-  <!-- EQ7 -->
-  <h2>EQ7: Sustainability</h2>
-  <div class="question">
-    To what extent are the results achieved by the Country Programme likely to be sustained after programme completion, especially for vulnerable and marginalized groups?
-  </div>
-  <table>
-    <thead>
-      <tr>
-        <th>Judgment Criteria</th>
-        <th>Indicator(s)</th>
-        <th>Source(s)</th>
-        <th>Data Collection Tools</th>
-        <th>Evidence / Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <b>7.1:</b> Results likely to be sustained, especially for vulnerable groups
-        </td>
-        <td>
-          <ul>
-            <li>I.1. Integration in national systems/plans</li>
-            <li>I.2. Capacity of partners/Govt</li>
-            <li>I.3. Financial sustainability</li>
-            <li>I.4. Community ownership/participation</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Exit strategies</li>
-            <li>Annual Reports</li>
-            <li>Policy docs</li>
-            <li>KII: Govt, IPs, CSOs</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Desk review</li>
-            <li>KII, FGD</li>
-            <li>Sustainability checklists</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Transition to Govt funding for fistula, midwifery, GBV</li>
-            <li>Mixed capacity among partners, variable local ownership</li>
-            <li>Risks: donor dependency, staff turnover, policy/financial gaps</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+                const svgEl = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svgEl.id = `svg-${index}`;
+                svgEl.setAttribute('class', 'absolute top-0 left-0 w-full h-full z-0');
+                svgEl.style.pointerEvents = 'none';
 
-  <!-- EQ8 -->
-  <h2>EQ8: Gender Equality and Human Rights (Cross-cutting)</h2>
-  <div class="question">
-    To what extent has the CP contributed to advancing gender equality, empowering women and girls, and upholding human rights for marginalized and vulnerable populations, including persons with disabilities and transgender persons?
-  </div>
-  <table>
-    <thead>
-      <tr>
-        <th>Judgment Criteria</th>
-        <th>Indicator(s)</th>
-        <th>Source(s)</th>
-        <th>Data Collection Tools</th>
-        <th>Evidence / Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <b>8.1:</b> CP contributes to GEWE and HR for marginalized/vulnerable populations
-        </td>
-        <td>
-          <ul>
-            <li>I.1. Progress on GEWE and human rights indicators</li>
-            <li>I.2. Inclusion of disability and transgender perspectives</li>
-            <li>I.3. Addressing harmful social norms</li>
-            <li>I.4. Legal and policy reforms supported</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Annual Reports</li>
-            <li>GEWE docs</li>
-            <li>Policy/legal docs</li>
-            <li>FGD: Women, PWD, transgender, youth</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Desk review</li>
-            <li>KII, FGD</li>
-            <li>Legal review</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Evidence of progress: GBV/child marriage laws, disability/SRH services, trans inclusion pilots</li>
-            <li>Persistent gaps in practice (inclusion, social norms, stigma)</li>
-            <li>CP effective in policy reform, more limited at service/community level</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+                const gridEl = document.createElement('div');
+                gridEl.className = 'grid grid-cols-1 md:grid-cols-3 gap-8 items-center';
+                
+                const findCol = document.createElement('div');
+                const conCol = document.createElement('div');
+                const recCol = document.createElement('div');
+                
+                let groupFindings = new Set();
+                group.conclusions.forEach(conId => {
+                    if(group.findings[conId]) {
+                        group.findings[conId].forEach(finId => groupFindings.add(finId));
+                    }
+                });
 
-</div>
+                data.findings.filter(f => groupFindings.has(f.id)).forEach(item => findCol.appendChild(createCard(item, 'fin')));
+                data.conclusions.filter(c => group.conclusions.includes(c.id)).forEach(item => conCol.appendChild(createCard(item, 'con')));
+                data.recommendations.filter(r => r.id === group.recommendation).forEach(item => recCol.appendChild(createCard(item, 'rec')));
+
+                gridEl.appendChild(findCol);
+                gridEl.appendChild(conCol);
+                gridEl.appendChild(recCol);
+                groupEl.appendChild(svgEl);
+                groupEl.appendChild(gridEl);
+                container.appendChild(groupEl);
+            });
+        }
+        
+        function drawAllConnections() {
+            data.connections.forEach((group, index) => {
+                const svg = document.getElementById(`svg-${index}`);
+                const groupEl = document.getElementById(`group-${index}`);
+                svg.innerHTML = ''; 
+
+                const groupRect = groupEl.getBoundingClientRect();
+
+                let groupConnections = [];
+                group.conclusions.forEach(conId => {
+                    groupConnections.push({ from: conId, to: group.recommendation });
+                    if(group.findings[conId]) {
+                        group.findings[conId].forEach(finId => {
+                            groupConnections.push({ from: finId, to: conId });
+                        });
+                    }
+                });
+                
+                groupConnections.forEach(conn => {
+                    const fromEl = document.getElementById(`card-${conn.from}`);
+                    const toEl = document.getElementById(`card-${conn.to}`);
+
+                    if (!fromEl || !toEl) return;
+
+                    const fromRect = fromEl.getBoundingClientRect();
+                    const toRect = toEl.getBoundingClientRect();
+
+                    const startX = fromRect.right - groupRect.left;
+                    const startY = fromRect.top + fromRect.height / 2 - groupRect.top;
+
+                    const endX = toRect.left - groupRect.left;
+                    const endY = toRect.top + toRect.height / 2 - groupRect.top;
+                    
+                    const controlX1 = startX + 80;
+                    const controlX2 = endX - 80;
+
+                    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                    path.setAttribute('d', `M ${startX} ${startY} C ${controlX1} ${startY}, ${controlX2} ${endY}, ${endX} ${endY}`);
+                    path.setAttribute('class', 'connector-path');
+                    svg.appendChild(path);
+                });
+            });
+        }
+
+        window.addEventListener('load', () => {
+            renderContent();
+            setTimeout(drawAllConnections, 150); 
+        });
+
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(drawAllConnections, 150);
+        });
+
+    </script>
 </body>
 </html>
+
